@@ -1,0 +1,49 @@
+{% extends "doc_layout.html"%} {% block content%}
+
+<h1>Notifications</h1>
+<br><br>
+
+<div class="row">
+
+    {% for i in myAppointments %}
+    <br>
+<div class="col-1"></div>
+    <div class="col-3">
+        <div class="card" style="border-top: 2px solid #f03e3e; box-shadow: 3px 3px 8px #dee2e6;">
+            <div class="card-body">
+
+                <br> Dr {{ i.docName }}, <b>{{i.createdby_name}}</b> wants to book an appointment on
+                {{i.date}} at
+                {{i.time}} <br> <br> Mode : {{i.mode}}
+                <br>
+
+
+                <button type="submit" class="btn btn-default " value="{{ i.id }} ">
+                    <a href="{{ url_for('ConfirmAppointment', id=i.id) }}">Confirm </a>
+                </button>
+
+                <button type="submit" class="btn btn-default " value="{{ i.id }} ">
+                    <a href="{{ url_for('CancelAppointment', id=i.id) }}">Cancel </a>
+                </button>
+                <br>
+
+                <div class="col-2"></div>
+
+            </div>
+
+        </div>
+<br><br>
+    </div>
+
+
+    {% endfor %}
+
+    <div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+{% endblock%}

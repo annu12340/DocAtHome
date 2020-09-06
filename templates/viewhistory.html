@@ -1,0 +1,13 @@
+{% extends "layout.html"%} {% block content%}
+
+<h1>History</h1>
+
+
+{% for h in history %}
+Description {{h.desc}}
+Allergies {{h.allergy}}
+Medication {{h.med}}
+{% endfor %}
+
+
+{% endblock%}

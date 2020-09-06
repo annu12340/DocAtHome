@@ -1,0 +1,83 @@
+{% extends "layout.html"%} {% block content%}
+
+
+<div class="row">
+
+    <div class="col-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div><img
+                         width="390" alt=""></div>
+                <div class="card-header" id="heading-example2" style="">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#collapse-example2" aria-expanded="true"
+                           aria-controls="collapse-example"
+                           style="text-decoration:none !important; color:#171a1c !important; font-size:25px">
+                            <i class="fa fa-chevron-down pull-right"></i>
+                            Remainders
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-example2" class="collapse show" aria-labelledby="heading-example2"
+                     style="padding:12%">
+                    <div class="card-block" class='editable' contentEditable="true">
+                      dfghj
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8">
+        <div class="col-md-12">
+            <div class="card">
+                <div><img
+                         src="https://image.freepik.com/free-vector/corona-virus-medicine-drugs-set-with-pills-injections-paper-clipboard-with-statistics_1268-14248.jpg"
+                        width="570" style="padding-left:30%" alt=""></div>
+                <div class="card-header" id="heading-example" style="background:#f03e3e;">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#collapse-example" aria-expanded="true"
+                           aria-controls="collapse-example"
+                           style="text-decoration:none !important; color:#171a1c !important; font-size:25px">
+                            <i class="fa fa-chevron-down pull-right"></i>
+                            Doctor's feedback
+
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-example" class="collapse show" aria-labelledby="heading-example"
+                     style="padding:5%; margin:3%">
+                    <div class="card-block">
+                        <img src="https://media0.giphy.com/media/RIw6pFIuEljc94U4u2/giphy.gif" alt="">
+                        {% for f in feedback %}
+
+                        <div class="row">
+                            <div class="col-3">{{f.date}}</div>
+
+                            <div class="col-4">{{f.feedback}} <br>  <i>&nbsp;&nbsp;  - Dr {{f.doc_name}}</i> <br>
+                                <button type="submit" class="btn btn-light">
+                                    <a href="{{detailed_report}}">View detailed report </a>
+                                </button>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-3"><h4><b>Consultation Fees : </b> {{f.consultation_fee}}</h4>
+                                <button type="submit" class="btn btn-light " value="{{ f.patient_id }}">
+                                    <a href="https://pay.google.com"> Pay Now </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock%}

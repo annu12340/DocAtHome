@@ -1,0 +1,113 @@
+{% extends "layout.html"%} {% block content%}
+<body style="margin:0;padding:0; background:#f8f9fa !important;">
+<div class="row">
+    <div class="col-3">
+        <div class="container-fluid">
+            <h2>Corona Statistics</h2>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card-counter primary">
+                        <i class="fa fa-info"></i>
+                        <span class="count-numbers">21,484,218 </span>
+                        <span class="count-name">Confirmed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card-counter danger">
+                        <i class="fa fa-heartbeat"></i>
+                        <span class="count-numbers">767,340</span>
+                        <span class="count-name">Deaths</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card-counter success">
+                        <i class="fa fa-plus-square"></i>
+                        <span class="count-numbers">14,067,942</span>
+                        <span class="count-name">Recoveries</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card-counter info">
+                        <i class="fa fa-users"></i>
+                        <span class="count-numbers">64,444</span>
+                        <span class="count-name">Critical</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-8">
+        <div>
+            <button class="btn btn-secondary btn-lg" style="text-decoration:none !important;margin-left:70%">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                     fill="currentColor" width="24" height="24" focusable="false">
+                    <path d="M17 13.75l2-2V20a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h8.25l-2 2H5v12h12v-5.25zm5-8a1 1 0 01-.29.74L13.15 15 7 17l2-6.15 8.55-8.55a1 1 0 011.41 0L21.71 5a1 1 0 01.29.71zm-4.07 1.83l-1.5-1.5-6.06 6.06 1.5 1.5zm1.84-1.84l-1.5-1.5-1.18 1.17 1.5 1.5z"></path>
+                </svg>
+                <a href="{{ url_for('addPost')}}" style="color:white"> Start post </a>
+
+            </button>
+            <br>
+        </div>
+
+
+        <div>
+            {% for i in showPost %}
+
+            <div class="homeDiv" style="padding:1%; ">
+
+                <div class="row"
+                     style="box-shadow: 0 8px 16px rgba(0, 0, 0, .1); background:#fff; padding:2%; border-radius:1%"  data-scroll>
+                    <div class="col-8">
+                        <b>{{ i.title }}</b>
+
+                        <br>
+                        <span style="color:#495057"> {{i.shortdescription }}</span>
+                        <br><br>
+                        {{ i.like}}&nbsp &nbsp<span class="glyphicon glyphicon-thumbs-up"></span>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        {{i.dislike}} &nbsp &nbsp<span class="glyphicon glyphicon-thumbs-down"></span>
+
+                        <br><br>
+                        <button type="submit" class="btn btn-dark btn-lg" value="{{ i.id }}"
+                                style="border-radius: 18px;">
+                            <a href="{{ url_for('ParticularPost', id=i.id) }}"
+                               style="color:white;text-decoration:none"> Read </a>
+                        </button>
+                        <br>
+                    </div>
+                    <div class="col-4">
+                        <br>
+                        <img src="{{i.img}}" alt="" height="190" width="200">
+                    </div>
+                </div>
+
+                <br>
+
+            </div>
+
+            {% endfor %}
+
+
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+      ScrollOut({
+        threshold:0.4
+      });
+    </script>
+{% endblock%}

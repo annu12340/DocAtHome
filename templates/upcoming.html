@@ -1,0 +1,54 @@
+{% extends "layout.html"%}
+{% block content%}
+
+
+<div class="row">
+   <div class="col-4" style="background-color:#f1f3f5; margin-top:0;transform:translateY(-40px);height:100%">
+        <h2>Available doctors</h2>
+        <img width="330"
+             src="https://img.freepik.com/free-vector/outline-heroes-medical-system_23-2148502688.jpg?size=626&ext=jpg"
+             alt="">
+        <br>
+        <br>
+        {% for i in show_doc %} <i> <b>{{ i.username }} </b></i> <br> &nbsp; &nbsp;&nbsp;Department: &nbsp;  {{i.department}}
+        <br>
+        <hr>
+        {% endfor %}
+    </div>
+
+
+
+
+<div class="col-1"></div>
+    <div class="col-6">
+        <h1>Upcoming Consultation</h1>
+<br>
+            {% for i in myAppointments %}
+    <div class="row index">
+            <div class="col-5">
+                Appointment with <br>
+                <b>Dr {{ i.docName }} </b>
+
+
+            </div>
+            <div class="col-6">
+                Date: {{i.date}} <br>
+                Time: {{i.time}} <br> Mode : {{i.mode}} <br>
+                <button type="button" class="btn btn-primary ">{{i.status}}
+                </button>
+            </div>
+
+        </div>
+          <br><br>
+        {% endfor %}
+
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+{% endblock%}

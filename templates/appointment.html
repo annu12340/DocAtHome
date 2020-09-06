@@ -1,0 +1,93 @@
+{% extends "layout.html"%}
+{% block content%}
+
+<div class="row">
+    <div class="col-3" style="background-color:#f1f3f5; margin-top:0;transform:translateY(-40px);height:100%">
+        <h2><b style="color:#6d7278">Available doctors</b></h2>
+        <img width="300"
+             src="https://images.squarespace-cdn.com/content/v1/5bc7b3b05239588cb627c3ba/1550136369543-X5XB9IEUKER9W5CD2YXM/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/health_solutions_progressive_doctor_integrated-physicians-medical-group_the-integrated-brain-and-spine-center-for-functional-neurology-and-medicine.gif?format=2500w"
+             alt="">
+        <br>
+        <br>
+        {% for i in show_doc %} <i> <b>{{ i.username }} </b></i> <br> &nbsp;Department: &nbsp; {{i.department}}<br><br>
+        <button type="submit" class="btn btn-dark " value="{{ i.id }}">
+            <a href="{{ url_for('doc_profile', id=i.id) }}" style="color:#f1f3f5"> View more</a>
+        </button>
+        <br>
+        <hr>
+        {% endfor %}
+    </div>
+    <div class="col-1"></div>
+    <div class="col-8">
+        <h1>Book appointment</h1>
+        <br>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" name="docName" class="form-control" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="department" class="form-control" placeholder="Enter department">
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <input id="datepicker" name="date" width="270" placeholder="Pick the date"/>
+                </div>
+                <div class="col-6">
+
+                    <input class="timepicker" name="time" id="event-time" type="text" value="" required="" width="270"
+                           placeholder="Pick the time">
+                </div>
+            </div>
+            <br>
+            &nbsp; &nbsp; &nbsp;<input type="radio" name="mode" id="offline" value="offline" class="text-center">
+            Offline </input>
+            &nbsp; &nbsp; &nbsp;<input type="radio" name="mode" id="online" value="online" class="text-center">
+            Online </input><br>
+            <br>
+
+            <hr>
+            <button type="submit" class="btn btn-dark text-center" id="appointment" style="margin-left:50%">Book now
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+<!--Script-->
+
+
+<script src="Scripts/ClockPicker.js"></script>
+<script>
+   $('.timepicker').timepicker({
+     });
+
+
+
+
+
+
+</script>
+
+<script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap'
+        });
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+{% endblock%}

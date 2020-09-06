@@ -1,0 +1,82 @@
+{% extends "layout.html"%}
+{% block content%}
+
+<div class="post">
+    <h1 class="text-center" style="font-weight:bolder"><b>{{post.title}}</b></h1>
+    <i style="padding-left:50%"> &nbsp;&nbsp;&nbsp; By {{username}}</i>
+
+    <hr>
+    <img src="{{post.img}}" alt="img" width="1200px" height="350px" style="padding-left:15%">
+    <br><br>
+    <div style="color:#495057;font-size:20px; padding-right:10%; font-size:18px">{{post.shortdescription}}</div>
+    <br>
+    <div style="font-size:20px; padding-right:10%">
+
+        {{post.description}}
+        <br>
+
+        <br>
+
+    </div>
+
+    <form action="" method="post">
+        <button type="submit" class="btn btn-default" value="{{ post.id }}">
+            {{post.like}} <a href="{{ url_for('likedislike', id=post.id, likedislike=1) }}"> <span
+                class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+        </button>
+        <button type="submit" class="btn btn-default" value="{{ post.id }}">
+            {{post.dislike}} <a href="{{ url_for('likedislike', id=post.id, likedislike=0) }}"> <span
+                class="glyphicon glyphicon-thumbs-down"></span> Dislike </a>
+        </button>
+
+    </form>
+ <hr>
+</div>
+<br><br>
+<div class="response" style="background:rgb(239,243,250);">
+
+    <div class="row">
+        <div class="col-7"><h1 style="font-weight:bolder">Responses</h1>
+            <ol>
+                <br>
+
+                {% for i in response %}
+
+              <div style="border-left: 3px solid #EC4849; background:#fff; border-radius:3%;box-shadow:5px 5px 3px rgba(0,0,0,0.1);padding:2%">
+                  <br>
+                   &nbsp; &nbsp; <i><b style="font-size:15px"><a href="{{ url_for('doc_profile', id=i.id) }}">{{i.createdby}}</a></b></i><br>
+                     &nbsp; &nbsp; &nbsp; <div style="font-size:18px">{{ i.description }}</div>
+<br><br>
+
+                  </div>
+                 <hr>
+                <br>
+                  <br>
+                    {% endfor %}
+
+
+            </ol>
+        </div>
+        <div class="col-2">
+            <img src="https://image.freepik.com/free-vector/content-marketing-isometric-illustration_151150-724.jpg"
+                 alt="">
+
+        </div>
+    </div>
+
+
+    <div>
+        {% if i.date == today %}
+
+        <form action="" method="post" style="background:#fefefe; padding:5%">
+            <div class="form-group">
+                <label>Your response</label>
+                <textarea rows="14" cols="50" name="description" class="form-control"
+                          placeholder="Enter text here..."> </textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+
+    </div></div>
+    {% endblock%}

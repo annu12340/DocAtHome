@@ -1,0 +1,71 @@
+{% extends "doc_layout.html"%}
+{% block content%}
+
+<div class="row">
+
+
+
+    <div class="col-4">
+        <img src="https://images.assettype.com/smeadvisor/2020-04/fbfcb5d8-3874-4e68-8104-b3763f081df6/56.gif?w=1200&auto=format%2Ccompress&ogImage=true" alt="" width="800px">
+    </div>
+       <div class="col-6">
+                  <h1>Feedback</h1>
+            <form action="" method="post" style="background:white">
+            <div class="form-group">
+                <input type="text" name="patient_name" class="form-control" placeholder="Enter Patient name">
+            </div>
+
+            <div class="form-group">
+                 <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" name="feedback"
+                           rows="5" placeholder="Write the general feedback"></textarea>
+            </div>
+
+            <div class="form-group">
+                 <button type="submit" class="btn btn-light">
+                    <a href="https://docs.google.com/document/d/1cQ9ZOfwM46pN4aP9F_1a-s4hrMRwN8jFTI5Cv9Upb1w/edit">Create detailed report </a>
+                </button>
+                 <input type="text" name="detailed_report" class="form-control"
+                       placeholder="Enter the link for the report">
+
+            </div>
+            <div class="form-group">
+                <input type="integer" name="consultation_fee" class="form-control"
+                       placeholder="Consultation fee">
+            </div>
+
+            <button type="submit" class="btn btn-dark text-center">Add</button>
+        </form>
+       </div>
+
+
+
+</div>
+<!--Script-->
+<script src="Scripts/ClockPicker.js"></script>
+<script>
+   $('.timepicker').timepicker({
+     });
+
+
+
+
+
+
+</script>
+
+<script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap'
+        });
+
+
+
+
+
+
+
+
+</script>
+
+
+{% endblock%}

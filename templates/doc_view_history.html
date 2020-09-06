@@ -1,0 +1,45 @@
+{% extends "doc_layout.html"%} {% block content%}
+
+<div class="row">
+    <div class="col-6">
+        <br><br><br><br><img
+            src="https://image.freepik.com/free-vector/doctor-looks-patient-s-electronic-chart-tablet-health-care-concept-3d-isometric_130740-19.jpg"
+            alt="">
+    </div>
+    <div class="col-6">
+        <div class="col-12" style="font-size:19px">
+            <h2 style="color:#0b7285">Basic details</h2>
+
+            Name: {{ p.name }}<br>
+            Age: {{ p.age}}<br>
+            Blood Group: {{ p.bloodGroup }}<br>
+
+            <h3> Medical history</h3>
+              Heredity Issues: {{m.heredityIssues}}
+                        <br> <br>
+                        Chronic diseases : {{m.desc}}
+                        <br>
+                        Allergies : {{m.allergy}}
+
+                        <br>
+                        <h2><u>Medications</u></h2><br>
+
+                        <h4>On going medicines : </h4>
+                        {{m.ongoingmedName}}
+                        <br>
+                        <h4>Past medicines: </h4>
+                        {{m.pastmedName}}
+
+
+        </div>
+        <br><br><br>
+        <hr>
+        <br>
+
+    </div>
+
+
+</div>
+
+
+{% endblock%}

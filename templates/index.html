@@ -1,0 +1,125 @@
+{% extends "layout.html"%}
+{% block content%}
+
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-9">
+
+        <div style="box-shadow: 4px 4px 20px #dee2e6; " class="col-12">
+            <h2 class="card-title font-weight-bold mb-2" style=" text-shadow: 1px 1px 3px #dee2e6;"><br> Today's
+                meeting</h2>
+            <button class="btn btn-primary" style="float:right; "><a href="/history" style="color: white !important">View feedback</a> </button>
+            <p class="card-text"><i class="far fa-clock pr-2"></i>
+                {{today}}
+            </p>
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://thumbs.dreamstime.com/b/medical-consultation-internet-doctor-vector-illustration-online-concept-telemedicine-service-patients-health-care-174826485.jpg" alt="" width="400px">
+                </div>
+                <div class="col-3"></div>
+                <div class="col-7" >
+                    <div class="card-body">
+
+                {% if myAppointments %}
+
+                {% for i in myAppointments %}
+                <div class="col-7">
+                    {% if i.date == today %}
+                    <div class="row index">
+
+                            Meeting with <b> &nbsp;Dr {{ i.docName }}</b> at {{i.time}} <br>  <br>Mode : {{i.mode}}
+                        <hr>
+                            {%if i.mode == 'online'%}
+                            <button type="submit" class="btn  btn-info">
+                                <a href="https://us04web.zoom.us/j/74710727644?pwd=SEZQTzJqOExCcnFiN1ZtVlhDZWhYZz09">Join <br> Meeting</a></button>
+                            {% endif %}
+                        </div>
+                        <br><br>
+                    </div>
+
+                    <br>
+                    {% endif %}
+                </div>
+                <div class="col-1"></div>
+                {% endfor %}
+
+            </div>
+                </div>
+            </div>
+            {% else %}
+            <div>
+                <h3>No appointments today</h3>
+                <img src="https://image.freepik.com/free-vector/booking-event-calendar_23-2148551245.jpg"
+                     alt="">
+            </div>
+            {%endif%}
+
+
+        </div>
+    </div>
+
+
+    <div class="col-12">
+        <br>
+        <br>
+        <h1 style="font-weight:bolder; font-family: helvetica">Upcoming Consultation</h1>
+        <br>
+        <div class="col-10" style="margin-left:10%">
+
+            <table class="table table-striped table-hover">
+                <thead>
+                <th scope="col">No</th>
+                <th scope="col">Doctor Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Mode</th>
+
+                </thead>
+                <tbody style="padding-left:10%">
+                <tr>
+                    {% for i in myAppointments %}
+                    {% if i.date != today %}
+                    <th scope="row">{{ loop.index }}</th>
+                    <td> {{i.createdby_name}}</td>
+                    <td>{{i.date}}</td>
+                    <td>{{i.time}}</td>
+                    <td>{{i.mode}}</td>
+
+                    <td>
+                        <button type="submit" class="btn btn-dark " value="{{ i.id }}">
+                            <a href="{{ url_for('doc_profile', id=i.id) }}" style="color: white !important"> View doctor details</a>
+                        </button>
+                    </td>
+
+                    {%endif%}
+                </tr>
+                {% endfor %}
+
+                <tr>
+
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <br><br><br>
+
+
+    <div class="col-1"></div>
+
+</div>
+
+<br>
+
+
+</div>
+
+{% endblock%}

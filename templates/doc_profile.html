@@ -1,0 +1,31 @@
+{% extends "layout.html"%} {% block content%}
+
+<div class="row">
+    <div class="col-6">
+      <img
+            src="https://www.thediabetescentre.com/wp-content/uploads/2019/11/changi-hospital-doctor-forge-mc.jpg" alt="" width="700px">
+    </div>
+    <div class="col-6">
+        <div class="col-10" style="font-size:19px">
+            <h2 style="color:#0b7285">Basic details</h2>
+
+            Name: {{ p.username }}<br>
+            Department: {{ p.department}}<br>
+            Hospital: {{ p.hospital }}<br>
+            Number of year of experience {{ p.year }}<br>
+            Hospital: {{ p.hospital }}<br>
+            Physician License Number: {{ p.license }}<br>
+            <img src="{{ p.credentials }}" alt=""><br>
+            Provide house visits: {{ p.homeVisits }}<br>
+
+
+        </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock%}

@@ -1,0 +1,48 @@
+{% extends "doc_layout.html"%} {% block content%}
+
+<h1>All bookings</h1>
+<br>
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped table-hover">
+            <thead>
+             <th scope="col">No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Mode</th>
+            <th scope="col">Status</th>
+            </thead>
+            <tbody>
+            <tr>
+               {% for i in myAppointments %}
+
+                 <th scope="row">{{ loop.index }}</th>
+                <td> {{i.createdby_name}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.time}}</td>
+                <td>{{i.mode}}</td>
+                <td>{{i.status}}</td>
+
+            </tr>
+           {% endfor %}
+
+            <tr>
+
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+<br>
+<hr>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+{% endblock%}

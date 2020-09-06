@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/layout.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin:0">
+
+    <ul class="nav navbar-nav  ">
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<div class="container-fluid" style="margin:0; padding:0">
+
+
+    <section class="login-block">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-7 banner-sec">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <br>
+                        <h2 class="text-center"> Registration form </h2><br>
+
+
+                        <img class="d-block img-fluid"
+                             src="/static/Screenshot2.png"
+                             style="height:30em;width:350px;margin-left:15%">
+
+
+                    </div>
+                </div>
+                <div class="col-md-5 login-sec">
+
+
+                    <br>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h6>Basic details</h6>
+                            <form action="" method="post">
+
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" name="username" class="form-control" placeholder="Enter name">
+
+                                </div>
+                                <div class="form-group">
+                                    Email <input type="text" name="email" class="form-control"
+                                                 placeholder="Enter email id ">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" name="password" class="form-control"
+                                           id="exampleInputPassword1" placeholder="Password">
+                                </div>
+
+
+                                <br>
+
+                                <div class="form-group">
+                                    Blood group
+                                    &nbsp; &nbsp; &nbsp; <input type="radio" name="bloodGroup" id="A" value="A">
+                                    A </input>
+                                    &nbsp; &nbsp; &nbsp;<input type="radio" name="bloodGroup" id="B" value="B">
+                                    B </input>
+                                    &nbsp; &nbsp; &nbsp;<input type="radio" name="bloodGroup" id="AB" value="AB">
+                                    AB </input>
+                                    &nbsp; &nbsp; &nbsp; <input type="radio" name="bloodGroup" id="O" value="O">
+                                    O </input>
+                                </div>
+
+
+                                <div class="form-group">
+                                    Age <input type="number" name="age" class="form-control" placeholder="Enter age">
+                                </div>
+                                <div class="form-group">
+                                    Gender <input type="text" name="gender" class="form-control"
+                                                  placeholder="Enter gender">
+                                </div>
+
+
+                                <br>
+                                <br>
+
+
+                                <button type="submit" class="btn btn-dark ">Continue</button>
+
+                            </form>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+
+</html>

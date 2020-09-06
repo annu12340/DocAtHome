@@ -1,0 +1,23 @@
+{% extends "layout.html"%} {% block content%}
+
+
+<div class="card text-center" style="width:50%;margin-left:20%; background-image:url('')">
+    <div class="card-header ">
+        <h1>{{ i.name }}</h1>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Contact Number <b>{{i.contactNumber}}</b></h4>
+        <p class="card-text">
+            <br> I am {{i.age}} years old <br> Gender: {{i.gender}}
+            &nbsp; &nbsp; &nbsp; &nbsp; Blood Group: {{i.bloodGroup}}
+            <br> <br><br><br> <b>Heredity Issues in the family:</b> <br> {{i.heredityIssues}} <br>
+
+
+        </p>
+
+    </div>
+
+</div>
+
+
+{% endblock%}

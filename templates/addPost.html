@@ -1,0 +1,30 @@
+{% extends "layout.html"%} {% block content%}
+
+<div class="row">
+
+    <div class="col-12">
+        <h1>Add Post</h1>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" name="title" class="form-control" placeholder="Enter title">
+            </div>
+              <div class="form-group">
+                <input type="text" name="shortdescription" class="form-control" placeholder="Enter short description">
+            </div>
+
+            <div class="form-group">
+
+                <textarea rows="14" cols="50" name="description" class="form-control"
+                          placeholder="Enter text here..."> </textarea>
+            </div>
+               <div class="form-group">
+                <input type="text" name="img" class="form-control" placeholder="Add image">
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-danger  btn-lg text-center">Add</button>
+        </form>
+    </div>
+
+</div>
+{% endblock%}

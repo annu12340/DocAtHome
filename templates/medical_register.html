@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/layout.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin:0">
+
+    <ul class="nav navbar-nav  ">
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<div class="container-fluid" style="margin:0; padding:0">
+
+
+    <section class="login-block">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-7 banner-sec">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <br><br>
+
+                        <img class="d-block img-fluid"
+                             src="/static/Screenshot1.png"
+                             style="height:30em;width:500px;margin-left:10%">
+
+
+                    </div>
+                </div>
+                <div class="col-md-5 login-sec">
+
+                    <br>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <form action="" method="post">
+
+
+                                <h5>Medical history</h5>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Any family heredity diesease </label>
+
+                                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea1"
+                                              name="heredityIssues"
+                                              rows="5"></textarea>
+                                </div>
+
+
+                                <div class="form-group">
+                                 Any allergies   <input type="text" value="" name="allergy"
+                                                                id="allergy" class="form-control"
+                                                                placeholder="allergies">
+                                </div>
+                                <div class="form-group">
+                                  Any Chronic diseases    <input type="text" name="desc" id="desc"
+                                                         class="form-control"
+                                                         placeholder="Chronic disesases">
+                                </div>
+                                <br>
+                                <div class="medicines">
+                                    <h6>On-going medication</h6>
+                                    <div class="form-group">
+                                        <input type="text" name="ongoingmedName" class="form-control"
+                                               id="ongoingmedName"
+                                               placeholder="Enter Name">
+                                    </div>
+
+                                    <h6>Past medication</h6>
+                                    <div class="form-group">
+                                        <input type="text" name="pastmedName" class="form-control" id="pastmedName"
+                                               placeholder="Enter Name">
+                                    </div>
+                                </div>
+
+
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </form>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+
+</html>

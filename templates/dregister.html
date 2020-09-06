@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/layout.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin:0; padding:0">
+
+    <ul class="nav navbar-nav  ">
+        <li class="nav-item">
+            <a class="nav-link" href="/dlogin">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/dregister">Register</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<div class="container-fluid" style="margin:0; padding:0">
+
+    <section class="login-block-doc ">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-7 banner-sec">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+
+                        <img class="d-block img-fluid"
+                             src="https://img.freepik.com/free-vector/doctor-teamwork_73842-103.jpg?size=626&ext=jpg"
+                             style="height:500px;width:600px">
+
+
+                    </div>
+                </div>
+                <div class="col-md-5 login-sec">
+                    <br><br>
+                    <h2> Register </h2>
+
+                    <br>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <form action="" method="post">
+
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" name="username" class="form-control" placeholder="Enter name">
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" name="password" class="form-control"
+                                           id="exampleInputPassword1" placeholder="Password">
+                                </div>
+
+                                <br><br>
+                                <h5>Basic details</h5>
+                                <br>
+                                <div class="form-group">
+                                    <label>Department</label>
+                                    <input type="text" name="department" class="form-control"
+                                           placeholder="Enter department">
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Hospital name</label>
+                                    <input type="text" name="hospital" class="form-control"
+                                           placeholder="Enter hospital name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Years of experience</label>
+                                    <input type="number" name="year" class="form-control"
+                                           placeholder="Enter number of experience">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Physician License Number</label>
+                                    <input type="text" name="license" class="form-control"
+                                           placeholder="Enter physician License Number">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Credentials</label>
+                                    <input type="text" name="credentials" class="form-control"
+                                           placeholder="Add Credentials">
+                                </div>
+
+                                <div class="form-group">
+                                    Do You Provide Home Visits
+                                    &nbsp; &nbsp; &nbsp; <input type="radio" name="homeVisits" id="Yes" value="Yes">
+                                    Yes </input>
+                                    &nbsp; &nbsp; &nbsp;<input type="radio" name="homeVisits" id="No" value="No">
+                                    No </input>
+                                    &nbsp; &nbsp;
+                                </div>
+
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <div>
+    </div>
+</div>
+</body>
+
+</html>
