@@ -1,6 +1,6 @@
 # Doc@home
 
-The spread of the pandemic has caused a lot of changes in our lifestyle, people fearing to get outside their homes, transportation almost shut down and social distancing becoming all the more important. While the physical impact of COVID-19 can be assessed and treated, the mental impact is often ignored. Many people are experiencing emotional breakdowns and having depression. The new reality of prolonged quarantine period and lack of socialization are adding up the mental struggle. More than 50% of those suffering from mental health issues are not seeking treatment, due to social stigma. Doc@home is a web app build with an indention for helping to cope up with the current covid situation. 
+The spread of the pandemic has caused a lot of changes in our lifestyle, people fearing to get outside their homes, transportation almost shut down and social distancing becoming all the more important. The three major health issues that we face during this pandemic is the deterioration of mental health due to lack of socialization,  difficulty in getting medical appointments due to travel restrictions, and the uncontrolled spread of fake news. Doc@home is a web app build with an indention for helping to cope up with the current COVID situation. 
 
 ![Screenshot (2)](https://user-images.githubusercontent.com/43414928/90967504-ad164c80-e4fd-11ea-8371-e89f0e471643.png)
 
@@ -8,17 +8,21 @@ The app has 3 primary functions:-
 
 
 ### 1. Became an AI companion for those in quarantine
- The new reality of prolonged quarantine period and lack of socialization with other family members, friends and managing the fear of contracting the virus and worry about people close to us who are particularly vulnerable, are all challenging for each one of us. This present environment in the country has increased stress and anxiety amongst the citizens. 
 
-Introducing to you Jessica, your very own AI companion. Jessica can help you overcome your isolation and loneliness
+“Connectedness is important to all humans, so I think we are all at risk [of loneliness during quarantine],” 
+       -   Deborah Roth Ledley, PhD, a licensed psychologist in Pennsylvania
+
+ The new reality of prolonged quarantine period and lack of socialization with other family members, friends and managing the fear of contracting the virus and worry about people close to us who are particularly vulnerable, are all challenging for each one of us.  While the physical impact of COVID-19 can be assessed and treated, the mental impact is often ignored. Many people are experiencing emotional breakdowns and having depression. The new reality of prolonged quarantine period and lack of socialization are adding up the mental struggle. **More than 50% of those suffering from mental health issues are not seeking treatment, due to social stigma.** This present environment in the country has increased stress and anxiety amongst the citizens. 
+
+Introducing to you Jessica, your very own AI companion. Jessica can help you overcome your isolation and loneliness. 
 ![c1](https://user-images.githubusercontent.com/43414928/90967560-7987f200-e4fe-11ea-921a-94b26de0f800.png)
 ![c2](https://user-images.githubusercontent.com/43414928/90967561-7a208880-e4fe-11ea-9af4-7e0862353de2.png)
 
 
 ### 2. Provide a connecting medium for doctors and patients  
 
-Sometimes a chatbot might not be enough. You might need to seek professional help
-The fear of traveling has resulted in the hampering of checkups of many people. Doc@home,  helps patients to take their routine checkups from the comfort of their homes without the scare of the virus. It helps any patient to connect with the doctor of their choice, from the list of available doctors, and book an appointment according to their convenience either in offline or online mode.
+But sometimes a chatbot might not be enough. You might need to seek professional help
+The fear of traveling has resulted in the hampering of checkups of many people. Doc@home, helps patients to take their routine checkups from the comfort of their homes without the scare of the virus. It helps any patient to connect with the doctor of their choice, from the list of available doctors, and book an appointment according to their convenience either in offline or online mode.
 
 The app has 2 portals, one for the patients requiring the appointment, and the doctors available for consultation. The patients can enter their medical history, any undergoing medication, etc which can be viewed by the doctor if he/she confirms their appointment. The index page of the patient and the doctor shows all their upcoming consultations. The doctor is notified if there are any patients requiring their appointment, and have the option to either confirm or deny, which causes a corresponding notification to be sent to the patient.
 The doctor can also send the prescription with detailed feedback to the patient after consultation, along with the consultation fee to be paid. The patient can view the feedback in the history tab of their portal, which also provides the facility to pay the consultation fee by redirecting them to the Google Pay web page.
@@ -28,34 +32,31 @@ The doctor can also send the prescription with detailed feedback to the patient 
 
 
 ### 3. Create a forum for discussion
-Another big issue that we face during this  time, is the spreading covid related of fake news.  News with no scientific basies like standing in sun can kill corona and yorr pets can spreading rapidly Corona for covid are rapidly spreadly
-It is estimated there over 800 deaths have occured due to what'sapp fake msg 
+Another big issue that we face during this time, is the spreading of COVID related fake news.  News with no scientific basis like standing in sun can kill corona and your pets can spread CoronA are rapidly spreadly
+**It is estimated there over 800 deaths have occurred due to WhatsApp fake msg **
 
-**Doc@home also tackles this issue**
+Doc@home also tackles this issue
 
-I have created a forum (inspired by stack overflow website) that could help people differentiate fake news from the real ones. Here people can raise doubts regarding different aspects of COVID and get answers from professionals and other peers. It is a community-driven platform where doctors and ordinary people can meet and help each other out
-
+I have created a forum (inspired by stack overflow website) that could help people differentiate fake news from the real ones. Here people can raise doubts regarding different aspects of COVID and get answers from professionals. It is a community-driven platform where doctors and ordinary people can meet and help each other out. This forum, to some extend, would help ordinary people seek professional help and advice, and use it as a methodology to separate 
+fake and actual news 
 ![8](https://user-images.githubusercontent.com/43414928/90332928-b9227b80-dfde-11ea-810b-89c9cad4fa68.png)
 
-This is a humble step from my side hoping to bring our world to normalcy with the pandemic on the spread.
+**Although, it isn't much this is a humble step from my side hoping to bring our world to normalcy with the pandemic on the spread.
+**
+## Why Doc@home: The innovative and social impact
 
-## Why Doc@home
+⚕️ Easy and affordable medical consultations, at the comfort of your home: On average, a telehealth visit costs about $79, compared with about $146 for an office visit, according to the study.
 
-⚕️ Easy and affordable medical consultations, at the comfort of your home.
+📹 Get a detailed medical prescription from verified doctors: After every session, you would receive detailed feedback from the doctor having all the details about the medicines to be taken, its quantity, the duration etc
 
-📹 Video call + detailed prescription from verified doctors
-
-🤯 Combats the social stigma surrounding the seeking of help for mental health issues.
+💊 One-stop solution to keep track of your medical history and remind you to take your pills: The platform gives a track of all our past medical details and family heredity details. It also gives you an option to share this info with the doctor of your choice. Getting the medical history of the patient would surely help the doctor make better choices. 
 
 🧘 AI companion for managing daily stress, anxiety, and depression issues.
 
-💊 One-stop solution to keep track of your medical history and remind you to take your pills.
+🤯 Combats the social stigma surrounding the seeking of help for mental health issues: The chatbot in the app has the potential to be useful tools for individuals with mental disorders, especially those who are reluctant to seek mental health advice due to stigmatization.
 
-📱 Platform to verify the truth behind viral messages surrounding health and stop the spreading of fake news.
+📱 Platform to verify the truth behind viral messages surrounding health and stop the spreading of fake news: The app provides a medium for users to seek professional opinions from doctors related to various COVID topics
 
-# Demo
-
-Watch demo : https://youtu.be/TO8GJ6G_Rw4
 
 
 # Screenshots
