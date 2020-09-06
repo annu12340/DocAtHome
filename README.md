@@ -55,7 +55,8 @@ This is a humble step from my side hoping to bring our world to normalcy with th
 
 # Demo
 
-Watch demo : https://youtu.be/YAN4tpV79TU
+Watch demo : https://youtu.be/TO8GJ6G_Rw4
+
 
 # Screenshots
 ## User Portal
@@ -90,3 +91,29 @@ Watch demo : https://youtu.be/YAN4tpV79TU
 ![9](https://user-images.githubusercontent.com/43414928/90325654-e7cb3280-df9b-11ea-8658-1cbf939f1f5c.png)
 ![10](https://user-images.githubusercontent.com/43414928/90325655-e863c900-df9b-11ea-9e64-e314e0e45f38.png)
 ![11](https://user-images.githubusercontent.com/43414928/90325651-e568d880-df9b-11ea-926d-a9a73ee86f5a.png)
+
+
+## Installation
+
+## Getting started
+
+* Fork & Clone the repo
+```
+  git clone https://github.com/[yourname]/Doc-Home..git
+```
+
+* Navigate through the project
+```
+  cd Doc-Home.
+```
+* Install all requirements
+  ``` 
+  pip install -r requirements.txt
+  ```
+  
+* Run :
+  ```
+  python3 main.py
+  ```
+  
+* Copy the localhost url (usually localhost:5000/) and paste in browser
