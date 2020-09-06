@@ -1,10 +1,15 @@
 # Doc@home
 
-The spread of the pandemic has caused a lot of changes in our lifestyle, people fearing to get outside their homes, transportation almost shut down and social distancing becoming all the more important. The three major health issues that we face during this pandemic is the deterioration of mental health due to lack of socialization,  difficulty in getting medical appointments due to travel restrictions, and the uncontrolled spread of fake news. Doc@home is a web app build with an indention for helping to cope up with the current COVID situation. 
+The spread of the pandemic has caused a lot of changes in our lifestyle, people fearing to get outside their homes, transportation almost shut down and social distancing becoming all the more important. The three major health issues that we face during this pandemic are
+- the deterioration of mental health due to lack of socialization 
+- difficulty in getting medical appointments due to travel restrictions
+- the uncontrolled spread of fake news. 
+
+Doc@home is a web app build with an indention for helping to cope up with the current COVID situation. 
 
 ![Screenshot (2)](https://user-images.githubusercontent.com/43414928/90967504-ad164c80-e4fd-11ea-8371-e89f0e471643.png)
 
-The app has 3 primary functions:-
+The app has 3 main features:-
 
 
 ### 1. Became an AI companion for those in quarantine
@@ -31,7 +36,7 @@ The doctor can also send the prescription with detailed feedback to the patient 
 
 
 
-### 3. Create a forum for discussion
+### 3. Create a forum for discussion between ordinary users and doctors
 Another big issue that we face during this time, is the spreading of COVID related fake news.  News with no scientific basis like standing in sun can kill corona and your pets can spread CoronA are rapidly spreadly
 **It is estimated there over 800 deaths have occurred due to WhatsApp fake msg **
 
@@ -41,8 +46,9 @@ I have created a forum (inspired by stack overflow website) that could help peop
 fake and actual news 
 ![8](https://user-images.githubusercontent.com/43414928/90332928-b9227b80-dfde-11ea-810b-89c9cad4fa68.png)
 
-**Although, it isn't much this is a humble step from my side hoping to bring our world to normalcy with the pandemic on the spread.
-**
+**Although, it isn't much this is a humble step from my side hoping to bring our world to normalcy with the pandemic on the spread.**
+
+
 ## Why Doc@home: The innovative and social impact
 
 ⚕️ Easy and affordable medical consultations, at the comfort of your home: On average, a telehealth visit costs about $79, compared with about $146 for an office visit, according to the study.
@@ -57,7 +63,8 @@ fake and actual news
 
 📱 Platform to verify the truth behind viral messages surrounding health and stop the spreading of fake news: The app provides a medium for users to seek professional opinions from doctors related to various COVID topics
 
-
+#Demo
+Watch demo : https://youtu.be/TO8GJ6G_Rw4
 
 # Screenshots
 ## User Portal
