@@ -7,6 +7,12 @@ The spread of the pandemic has caused a lot of changes in our lifestyle, people 
 
 Doc@home is a web app build with an indention for helping to cope up with the current COVID situation. 
 
+# Demo
+
+Watch demo : https://youtu.be/TO8GJ6G_Rw4
+
+
+
 ![Screenshot (2)](https://user-images.githubusercontent.com/43414928/90967504-ad164c80-e4fd-11ea-8371-e89f0e471643.png)
 
 The app has 3 main features:-
@@ -23,11 +29,12 @@ Introducing to you Jessica, your very own AI companion. Jessica can help you ove
 ![c1](https://user-images.githubusercontent.com/43414928/90967560-7987f200-e4fe-11ea-921a-94b26de0f800.png)
 ![c2](https://user-images.githubusercontent.com/43414928/90967561-7a208880-e4fe-11ea-9af4-7e0862353de2.png)
 
+<br/>
 
 ### 2. Provide a connecting medium for doctors and patients  
 
 But sometimes a chatbot might not be enough. You might need to seek professional help
-The fear of traveling has resulted in the hampering of checkups of many people. Doc@home, helps patients to take their routine checkups from the comfort of their homes without the scare of the virus. It helps any patient to connect with the doctor of their choice, from the list of available doctors, and book an appointment according to their convenience either in offline or online mode.
+The fear of traveling has resulted in the hampering of checkups of many people. **Doc@home, helps patients to take their routine checkups from the comfort of their homes without the scare of the virus.** It helps any patient to connect with the doctor of their choice, from the list of available doctors, and book an appointment according to their convenience either in offline or online mode.
 
 The app has 2 portals, one for the patients requiring the appointment, and the doctors available for consultation. The patients can enter their medical history, any undergoing medication, etc which can be viewed by the doctor if he/she confirms their appointment. The index page of the patient and the doctor shows all their upcoming consultations. The doctor is notified if there are any patients requiring their appointment, and have the option to either confirm or deny, which causes a corresponding notification to be sent to the patient.
 The doctor can also send the prescription with detailed feedback to the patient after consultation, along with the consultation fee to be paid. The patient can view the feedback in the history tab of their portal, which also provides the facility to pay the consultation fee by redirecting them to the Google Pay web page.
@@ -35,10 +42,11 @@ The doctor can also send the prescription with detailed feedback to the patient 
 ![Screenshot (1)](https://user-images.githubusercontent.com/43414928/90332844-0d792b80-dfde-11ea-8424-ca283af5c6d4.png)
 
 
-
+<br/>
 ### 3. Create a forum for discussion between ordinary users and doctors
+
 Another big issue that we face during this time, is the spreading of COVID related fake news.  News with no scientific basis like standing in sun can kill corona and your pets can spread CoronA are rapidly spreadly
-**It is estimated there over 800 deaths have occurred due to WhatsApp fake msg **
+**It is estimated there over 800 deaths have occurred due to WhatsApp fake msg**
 
 Doc@home also tackles this issue
 
@@ -46,25 +54,30 @@ I have created a forum (inspired by stack overflow website) that could help peop
 fake and actual news 
 ![8](https://user-images.githubusercontent.com/43414928/90332928-b9227b80-dfde-11ea-810b-89c9cad4fa68.png)
 
-**Although, it isn't much this is a humble step from my side hoping to bring our world to normalcy with the pandemic on the spread.**
+<br/>
 
+**Although, it isn't much this is a humble step from my side hoping to bring our world to normalcy with the pandemic on the spread.**
+<hr/>
+
+<br/><br/>
 
 ## Why Doc@home: The innovative and social impact
 
-⚕️ Easy and affordable medical consultations, at the comfort of your home: On average, a telehealth visit costs about $79, compared with about $146 for an office visit, according to the study.
+⚕️ **Easy and affordable medical consultations, at the comfort of your home:** On average, a telehealth visit costs about $79, compared with about $146 for an office visit, according to the study. With doc@home users can consult any doctor 24*7 from anywhere in the world and the appointment scheduling process occurs in one well-organized platform so the endless back and forth communication can be avoided 
 
-📹 Get a detailed medical prescription from verified doctors: After every session, you would receive detailed feedback from the doctor having all the details about the medicines to be taken, its quantity, the duration etc
+📹 **Get a detailed medical prescription from verified doctors:** After every session, you would receive detailed feedback from the doctor having all the details about the medicines to be taken, its quantity, the duration, etc
 
-💊 One-stop solution to keep track of your medical history and remind you to take your pills: The platform gives a track of all our past medical details and family heredity details. It also gives you an option to share this info with the doctor of your choice. Getting the medical history of the patient would surely help the doctor make better choices. 
+💊 **One-stop solution to keep track of your medical history and remind you to take your pills:** The platform gives a track of all our past medical details and family heredity details. It also gives you an option to share this info with the doctor of your choice. Getting the medical history of the patient would surely help the doctor make better choices. 
 
-🧘 AI companion for managing daily stress, anxiety, and depression issues.
+🧘 **AI companion for managing daily stress, anxiety, and depression issues.**
 
-🤯 Combats the social stigma surrounding the seeking of help for mental health issues: The chatbot in the app has the potential to be useful tools for individuals with mental disorders, especially those who are reluctant to seek mental health advice due to stigmatization.
+🤯 **Combats the social stigma surrounding the seeking of help for mental health issues:** The chatbot in the app has the potential to be useful tools for individuals with mental disorders, especially those who are reluctant to seek mental health advice due to stigmatization.
 
-📱 Platform to verify the truth behind viral messages surrounding health and stop the spreading of fake news: The app provides a medium for users to seek professional opinions from doctors related to various COVID topics
+📱 **Platform to verify the truth behind viral messages surrounding health and stop the spreading of fake news**: The app provides a medium for users to seek professional opinions from doctors related to various COVID topics
 
-#Demo
-Watch demo : https://youtu.be/TO8GJ6G_Rw4
+<br/>
+
+
 
 # Screenshots
 ## User Portal
